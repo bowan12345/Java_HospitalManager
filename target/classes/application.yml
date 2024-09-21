@@ -1,0 +1,24 @@
+server:
+  servlet:
+    context-path: /hospital
+  port: 9281
+
+spring:
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    #url: jdbc:mysql://127.0.0.1:3306/hospital_manager?characterEncoding=utf8&useSSL=false&serverTimezone=UTC&allowPublicKeyRetrieval=true
+    url: jdbc:mysql://139.224.72.73:3306/hospital_manager?characterEncoding=utf8&useSSL=false&serverTimezone=UTC&allowPublicKeyRetrieval=true
+    username: root
+    #password: root
+    password: Hanhan0201@
+
+mybatis-plus:
+  mapper-locations: classpath*:mybatis/*.xml
+  configuration:
+    map-underscore-to-camel-case: true
+
+
+
+
+
+
